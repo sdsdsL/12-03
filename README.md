@@ -36,10 +36,10 @@ SELECT DISTINCT district  FROM address a WHERE district LIKE 'K%a' AND district 
 
 
 ```mysql
-SELECT CAST(payment_date AS DATE) date, amount  FROM payment p WHERE DATE(payment_date) > "2005-06-15" AND DATE(payment_date) < "2005-06-18" AND  amount > 10 
+SELECT payment_id , payment_date, amount FROM payment WHERE payment_date BETWEEN '2005-06-15' AND '2005-06-19' and amount > 10.00 ORDER BY payment_date desc
 ```
 
-![alt_text](https://github.com/sdsdsL/12-03/blob/main/img/2.png)
+![alt_text](https://github.com/sdsdsL/12-03/blob/main/img/2_reworked.png)
 ---
 
 ### Задание 3
